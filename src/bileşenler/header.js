@@ -11,6 +11,10 @@ const Header = (baslik, tarih, yazi) => {
   //    <span class="temp">{ yazi }</span>
   //  </div>
   //
+
+  /*const headerContainerDiv =
+    document.getElementsByClassName("header-container")[0];*/
+
   const headerDiv = document.createElement("div");
   headerDiv.classList.add("header");
 
@@ -26,6 +30,8 @@ const Header = (baslik, tarih, yazi) => {
   headerSpan2.textContent = yazi;
 
   headerDiv.append(headerSpan, headerH1, headerSpan2);
+
+  /*headerContainerDiv.append(headerDiv);*/ //Yorum şeklindekiler gibi yazınca testi geçmiyor!
 
   return headerDiv;
 };
